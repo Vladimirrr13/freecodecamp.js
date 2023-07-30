@@ -442,3 +442,355 @@ console.log(testLessThan(54));
 console.log(testLessThan(55));
 console.log(testLessThan(99));
 */
+
+/* --------------------------------- TASK 72 --------------------------------- */
+
+/* Добавьте оператор меньше или равно к указанным строкам, чтобы операторы return имели смысл.
+
+Ожидание :testLessOrEqual(0)должен вернуть строкуSmaller Than or Equal to 12
+Ожидание :testLessOrEqual(11)должен вернуть строкуSmaller Than or Equal to 12
+Ожидание :testLessOrEqual(12)должен вернуть строкуSmaller Than or Equal to 12
+Ожидание :testLessOrEqual(23)должен вернуть строкуSmaller Than or Equal to 24
+Ожидание :testLessOrEqual(24)должен вернуть строкуSmaller Than or Equal to 24
+Ожидание :testLessOrEqual(25)должен вернуть строкуMore Than 24
+Ожидание :testLessOrEqual(55)должен вернуть строкуMore Than 24
+Ожидание :Вы должны использовать <=оператор как минимум дважды */
+
+/* function testLessOrEqual(val) {
+  if (val <= 12) {  
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+console.log(testLessOrEqual(0));
+console.log(testLessOrEqual(11));
+console.log(testLessOrEqual(12));
+console.log(testLessOrEqual(23));
+console.log(testLessOrEqual(24));
+console.log(testLessOrEqual(25));
+console.log(testLessOrEqual(55)); */
+
+/* --------------------------------- TASK 73 --------------------------------- */
+
+/* Замените два оператора if одним оператором, используя &&оператор, который вернет строку, Yesесли valменьше или равно 50и больше или равно 25.
+В противном случае будет возвращена строка No. 
+
+Вы должны использовать &&оператор один раз
+Ожидание :У вас должно быть только одно ifзаявление
+Ожидание :testLogicalAnd(0)должен вернуть строкуNo
+Ожидание :testLogicalAnd(24)должен вернуть строкуNo
+Ожидание :testLogicalAnd(25)должен вернуть строкуYes
+Ожидание :testLogicalAnd(30)должен вернуть строкуYes
+Ожидание :testLogicalAnd(50)должен вернуть строкуYes
+Ожидание :testLogicalAnd(51)должен вернуть строкуNo
+Ожидание :testLogicalAnd(75)должен вернуть строкуNo
+Ожидание :testLogicalAnd(80)должен вернуть строкуNo */
+
+/* function testLogicalAnd(val) {
+
+  if (val >= 25 && val <= 50) {
+      return "Yes";
+  }
+
+  return "No";
+}
+
+console.log(testLogicalAnd(0));
+console.log(testLogicalAnd(24));
+console.log(testLogicalAnd(25));
+console.log(testLogicalAnd(30));
+console.log(testLogicalAnd(50));
+console.log(testLogicalAnd(51));
+console.log(testLogicalAnd(75));
+console.log(testLogicalAnd(80));
+*/
+
+/* --------------------------------- TASK 74 --------------------------------- */
+
+/* Объедините два ifоператора в один оператор, который возвращает строку, Outsideесли valона не находится между 10и 20включительно.
+В противном случае вернуть строку Inside. 
+
+Ожидание :Вы должны использовать ||оператор один раз
+Ожидание :У вас должно быть только одно ifзаявление
+Ожидание :testLogicalOr(0)должен вернуть строкуOutside
+Ожидание :testLogicalOr(9)должен вернуть строкуOutside
+Ожидание :testLogicalOr(10)должен вернуть строкуInside
+Ожидание :testLogicalOr(15)должен вернуть строкуInside
+Ожидание :testLogicalOr(19)должен вернуть строкуInside
+Ожидание :testLogicalOr(20)должен вернуть строкуInside
+Ожидание :testLogicalOr(21)должен вернуть строкуOutside
+Ожидание :testLogicalOr(25)должен вернуть строкуOutside */
+
+/* function testLogicalOr(val) {
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+
+  return "Inside";
+
+console.log(testLogicalOr(0));
+console.log(testLogicalOr(9));
+console.log(testLogicalOr(10));
+console.log(testLogicalOr(15));
+console.log(testLogicalOr(19));
+console.log(testLogicalOr(20));
+console.log(testLogicalOr(21));
+console.log(testLogicalOr(22));
+} */
+
+/* --------------------------------- TASK 75 --------------------------------- */
+
+/* Объедините ifутверждения в одно if/elseутверждение.
+
+Ожидание :У вас должен быть только один ifоператор в редакторе
+Ожидание :Вы должны использовать elseзаявление
+Ожидание :testElse(4)должен вернуть строку5 or Smaller
+Ожидание :testElse(5)должен вернуть строку5 or Smaller
+Ожидание :testElse(6)должен вернуть строкуBigger than 5
+Ожидание :testElse(10)должен вернуть строкуBigger than 5
+Ожидание :Вы не должны изменять код выше или ниже указанных комментариев. */
+
+/* function testElse(val) {
+  let result = "";
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+  else {
+    result = "5 or Smaller";
+  }
+
+  return result;
+}
+
+console.log(testElse(4));
+console.log(testElse(5));
+console.log(testElse(6));
+console.log(testElse(10));  */
+
+/* --------------------------------- TASK 76 --------------------------------- */
+
+/* Преобразуйте логику, чтобы использовать else if операторы.
+
+Ожидание :У вас должно быть как минимум два else заявления
+Ожидание :У вас должно быть как минимум два if заявления
+Ожидание :У вас должны быть закрывающие и открывающие фигурные скобки для каждого if elseблока кода.
+Ожидание :testElseIf(0)должен вернуть строкуSmaller than 5
+Ожидание :testElseIf(5)должен вернуть строкуBetween 5 and 10
+Ожидание :testElseIf(7)должен вернуть строкуBetween 5 and 10
+Ожидание :testElseIf(10)должен вернуть строкуBetween 5 and 10
+Ожидание :testElseIf(12)должен вернуть строкуGreater than 10 */
+
+/* function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+
+  else if (val < 5) {
+    return "Smaller than 5";
+  }
+  else{
+    return "Between 5 and 10";
+  }
+} 
+
+console.log(testElse(0));
+console.log(testElse(5));
+console.log(testElse(7));
+console.log(testElse(10));
+console.log(testElse(12));
+*/
+
+/* --------------------------------- TASK 77 --------------------------------- */
+
+/* Измените порядок логики в функции, чтобы она возвращала правильные операторы во всех случаях.
+
+Ожидание :orderMyLogic(4)должен вернуть строкуLess than 5
+Ожидание :orderMyLogic(6)должен вернуть строкуLess than 10
+Ожидание :orderMyLogic(11)должен вернуть строкуGreater than or equal to 10 */
+
+/* function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+console.log(orderMyLogic(4));
+console.log(orderMyLogic(6));
+console.log(orderMyLogic(11)); */
+
+/* --------------------------------- TASK 78 --------------------------------- */
+
+/* Напишите цепочку операторов if/ else if, чтобы выполнить следующие условия:
+
+num < 5- вернуться Tiny
+num < 10- вернуться Small
+num < 15- вернуться Medium
+num < 20- вернуться Large
+num >= 20- вернутьсяHuge
+
+Ожидание :У вас должно быть не менее четырех elseутверждений
+Ожидание :У вас должно быть не менее четырех ifутверждений
+Ожидание :У вас должно быть хотя бы одно returnзаявление
+Ожидание :testSize(0)должен вернуть строкуTiny
+Ожидание :testSize(4)должен вернуть строкуTiny
+Ожидание :testSize(5)должен вернуть строкуSmall
+Ожидание :testSize(8)должен вернуть строкуSmall
+Ожидание :testSize(10)должен вернуть строкуMedium
+Ожидание :testSize(14)должен вернуть строкуMedium
+Ожидание :testSize(15)должен вернуть строкуLarge
+Ожидание :testSize(17)должен вернуть строкуLarge
+Ожидание :testSize(20)должен вернуть строкуHuge
+Ожидание :testSize(25)должен вернуть строкуHuge */
+
+/* function testSize(num) {
+
+if (num < 5) {
+  return "Tiny";
+}
+else if (num < 10) {
+return "Small";
+}
+else if (num < 15) {
+return "Medium";
+}
+else if (num < 20) {
+return "Large";
+}
+else {
+return "Huge";
+}
+}
+
+console.log(testSize(0));
+console.log(testSize(4));
+console.log(testSize(5));
+console.log(testSize(8));
+console.log(testSize(10));
+console.log(testSize(14));
+console.log(testSize(15));
+console.log(testSize(17));
+console.log(testSize(20));
+console.log(testSize(25));
+*/
+
+/* --------------------------------- TASK 79 --------------------------------- */
+
+/* Golf Code
+In the game of Golf, each hole has a par, meaning, the average number of strokes a golfer is expected to make in order to sink the ball in the hole to complete the play. Depending on how far above or below par your strokes are, there is a different nickname.
+
+Your function will be passed par and strokes arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):
+
+Strokes	Return
+1	"Hole-in-one!"
+<= par - 2	"Eagle"
+par - 1	"Birdie"
+par	"Par"
+par + 1	"Bogey"
+par + 2	"Double Bogey"
+>= par + 3	"Go Home!"
+par and strokes will always be numeric and positive. We have added an array of all the names for your convenience.
+
+golfScore(4, 1) should return the string Hole-in-one!
+Passed:golfScore(4, 2) should return the string Eagle
+Passed:golfScore(5, 2) should return the string Eagle
+Passed:golfScore(4, 3) should return the string Birdie
+Failed:golfScore(4, 4) should return the string Par
+Passed:golfScore(1, 1) should return the string Hole-in-one!
+Failed:golfScore(5, 5) should return the string Par
+Failed:golfScore(4, 5) should return the string Bogey
+Failed:golfScore(4, 6) should return the string Double Bogey
+Failed:golfScore(4, 7) should return the string Go Home!
+Failed:golfScore(5, 9) should return the string Go Home! */
+
+/* const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+
+if (strokes == 1) {
+  return names[0];
+}
+else if (strokes <= par - 2) {
+  return names[1];
+}
+else if (strokes == par - 1) {
+  return names[2];
+}
+else if (strokes == par) {
+  return names[3];
+}
+else if (strokes == par + 1) {
+  return names[4];
+}
+else if (strokes == par + 2) {
+  return names[5];
+}
+else if (strokes >= par + 3) {
+  return names[6];
+}
+
+}
+
+console.log(golfScore(4, 1));
+console.log(golfScore(4, 2));
+console.log(golfScore(5, 2));
+console.log(golfScore(4, 3));
+console.log(golfScore(4, 4));
+console.log(golfScore(1, 1));
+console.log(golfScore(5, 5));
+console.log(golfScore(4, 5));
+console.log(golfScore(4, 6));
+console.log(golfScore(4, 7));
+console.log(golfScore(5, 9)); */
+
+/* --------------------------------- TASK 80 --------------------------------- */
+
+/* Напишите оператор switch, который проверяет valи устанавливает answerследующие условия:
+1- alpha
+2- beta
+3- gamma
+4-delta
+
+Ожидание :caseInSwitch(1)должно иметь значение строкиalpha
+Ожидание :caseInSwitch(2)должно иметь значение строкиbeta
+Ожидание :caseInSwitch(3)должно иметь значение строкиgamma
+Ожидание :caseInSwitch(4)должно иметь значение строкиdelta
+Ожидание :Вы не должны использовать операторы any ifилиelse
+Ожидание :У вас должно быть не менее 3 breakутверждений */
+
+/* function caseInSwitch(val) {
+  let answer = "";
+
+switch (val) {
+case 1:
+return "alpha";
+break;
+case 2:
+return "beta";
+break;
+case 3:
+return "gamma";
+break;
+case 4:
+return "delta";
+break;
+}
+
+  return answer;
+};
+
+console.log(caseInSwitch(1));
+console.log(caseInSwitch(2));
+console.log(caseInSwitch(3));
+console.log(caseInSwitch(4)); */
