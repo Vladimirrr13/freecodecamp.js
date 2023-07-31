@@ -794,3 +794,45 @@ console.log(caseInSwitch(1));
 console.log(caseInSwitch(2));
 console.log(caseInSwitch(3));
 console.log(caseInSwitch(4)); */
+
+
+/* --------------------------------- TASK 81 --------------------------------- */
+
+/* 
+Напишите оператор switch для установки answerследующих условий:
+a- apple
+b- bird
+c- cat
+default-stuff
+
+switchOfStuff("a")должен вернуть строкуapple
+Ожидание :switchOfStuff("b")должен вернуть строкуbird
+Ожидание :switchOfStuff("c")должен вернуть строкуcat
+Ожидание :switchOfStuff("d")должен вернуть строкуstuff
+Ожидание :switchOfStuff(4)должен вернуть строкуstuff
+Ожидание :Вы не должны использовать операторы any ifилиelse
+Ожидание :Вы должны использовать defaultзаявление
+Ожидание :У вас должно быть не менее 3 breakутверждений */
+
+/* function switchOfStuff(val) {
+  let answer = "";
+
+switch (val) {
+    case "a":
+  answer = "apple";
+  break;
+    case "b":
+  answer = "bird";
+  break;
+    case "c":
+  answer = "cat";
+  break;
+  default:
+  answer = "stuff";
+  break;
+}
+
+  return answer;
+}
+
+console.log(switchOfStuff(a)); */
