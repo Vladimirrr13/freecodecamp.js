@@ -816,23 +816,89 @@ switchOfStuff("a")должен вернуть строкуapple
 
 /* function switchOfStuff(val) {
   let answer = "";
-
+  // Only change code below this line
 switch (val) {
-    case "a":
-  answer = "apple";
-  break;
-    case "b":
-  answer = "bird";
-  break;
-    case "c":
-  answer = "cat";
-  break;
-  default:
-  answer = "stuff";
-  break;
+  case "a":
+    answer = "apple";
+    break;
+  case "b":
+    answer = "bird";
+    break;
+      case "c":
+    answer = "cat";
+    break;
+      default:
+    answer = "stuff";
+    break;
 }
 
+
+  // Only change code above this line
   return answer;
 }
+
+console.log(switchOfStuff("a"));
+console.log(switchOfStuff("b"));
+console.log(switchOfStuff("c"));
+console.log(switchOfStuff("d"));
+console.log(switchOfStuff("4")); */
+
+/* --------------------------------- TASK 82 --------------------------------- */
+
+/* Напишите оператор switch для установки answerследующих диапазонов:
+1-3- Low
+4-6- Mid
+7-9-High
+
+Примечание. Вам потребуется caseзаявление для каждого числа в диапазоне.
+
+Ожидание :sequentialSizes(1)должен вернуть строкуLow
+Ожидание :sequentialSizes(2)должен вернуть строкуLow
+Ожидание :sequentialSizes(3)должен вернуть строкуLow
+Ожидание :sequentialSizes(4)должен вернуть строкуMid
+Ожидание :sequentialSizes(5)должен вернуть строкуMid
+Ожидание :sequentialSizes(6)должен вернуть строкуMid
+Ожидание :sequentialSizes(7)должен вернуть строкуHigh
+Ожидание :sequentialSizes(8)должен вернуть строкуHigh
+Ожидание :sequentialSizes(9)должен вернуть строкуHigh
+Ожидание :Вы не должны использовать операторы any ifилиelse
+Ожидание :У вас должно быть девять caseутверждений */
+
+/* function sequentialSizes(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      return "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      return "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      return "High";
+      break;
+  }
+  // Only change code above this line
+  return answer;
+}
+// Change this value to test
+sequentialSizes(1);
+
+console.log(sequentialSizes("1"));
+console.log(sequentialSizes("2"));
+console.log(sequentialSizes("3"));
+console.log(sequentialSizes("4"));
+console.log(sequentialSizes("5"));
+console.log(sequentialSizes("6"));
+console.log(sequentialSizes("7"));
+console.log(sequentialSizes("8"));
+console.log(sequentialSizes("9")); */
+
 
 console.log(switchOfStuff(a)); */
