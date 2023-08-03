@@ -948,4 +948,19 @@ console.log(chainToSwitch(7));
 console.log(chainToSwitch("John"));
 console.log(chainToSwitch(156)); */ 
 
-console.log(switchOfStuff(a)); */
+/* --------------------------------- TASK 84 --------------------------------- */
+
+/* Исправьте функцию isLess, чтобы удалить if/else операторы.
+
+Ожидание :isLess(10, 15)должен вернутьсяtrue
+Ожидание :isLess(15, 10)должен вернутьсяfalse
+Ожидание :Вы не должны использовать операторы any ifилиelse */
+
+/* function isLess(a, b) {
+
+return a < b;
+
+}
+
+console.log(isLess(10, 15));
+console.log(isLess(15, 10)); */
