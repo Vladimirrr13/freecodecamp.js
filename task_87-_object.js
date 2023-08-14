@@ -24,18 +24,125 @@ console.log(myDog); */
 
 /* --------------------------------- TASK 88 --------------------------------- */
 
-/*  */
+/* Считайте значения свойств testObjс помощью записи через точку. 
+Установите переменную hatValueравной свойству объекта hatи установите переменную shirtValueравной свойству объекта shirt. 
 
-/*  */
+Ожидание :hatValueдолжна быть строка
+Ожидание :Значение hatValueдолжно быть строкойballcap
+Ожидание :shirtValueдолжна быть строка
+Ожидание :Значение shirtValueдолжно быть строкойjersey
+Ожидание :Вы должны использовать запись через точку дважды
+*/
+
+/* const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+const hatValue = testObj.hat;     
+const shirtValue = testObj.shirt;    
+
+console.log(hatValue);
+console.log(shirtValue); */
 
 /* --------------------------------- TASK 89 --------------------------------- */
 
-/*  */
+/* Прочитайте значения свойств an entreeи the drinkиспользования testObjскобочной нотации и присвойте их соответственно entreeValueи drinkValue.
 
-/*  */
+Ожидание :entreeValueдолжна быть строка
+Ожидание :Значение entreeValueдолжно быть строкойhamburger
+Ожидание :drinkValueдолжна быть строка
+Ожидание :Значение drinkValueдолжно быть строкойwater
+Ожидание :Вы должны использовать скобки дважды
+*/
+
+/* const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+const entreeValue = testObj["an entree"];   
+const drinkValue = testObj['the drink'];     */
 
 /* --------------------------------- TASK 90 --------------------------------- */
 
-/*  */
+/* Установите playerNumberпеременную в 16. Затем используйте переменную, чтобы найти имя игрока и присвоить его player.
 
-/*  */
+Ожидание :playerNumberдолжно быть число
+Ожидание :Переменная playerдолжна быть строкой
+Ожидание :Значение playerдолжно быть строкойMontana
+Ожидание :Вы должны использовать обозначение в квадратных скобках для доступаtestObj
+Ожидание :Вы не должны присваивать значение Montanaпеременной playerнапрямую.
+Ожидание :Вы должны использовать переменную playerNumberв скобках
+*/
+
+/* const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+const playerNumber = 16; 
+const player = testObj[playerNumber];  
+
+console.log(player); */
+
+/* --------------------------------- TASK 91 --------------------------------- */
+
+/* Обновите myDogсвойство имени объекта. Давайте изменим ее имя с Coderна Happy Coder. Вы можете использовать либо точку, либо квадратную нотацию.
+
+Ожидание :Вы должны обновить myDogсвойство name, чтобы оно равнялось строке Happy Coder.
+Ожидание :Не следует редактировать myDogопределение.
+*/
+
+/* const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder";
+
+console.log(myDog); */
+
+/* --------------------------------- TASK 92 --------------------------------- */
+
+/* Добавьте barkсвойство myDogи задайте для него звук собаки, например "гав". Вы можете использовать либо точку, либо квадратную нотацию.
+
+Ожидание :Вы должны добавить свойство barkв myDog.
+Ожидание :Вы не должны добавлять barkк инициализации myDog.
+*/
+
+/* const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "ufd";
+
+console.log(myDog); */
+
+/* --------------------------------- TASK 93 --------------------------------- */
+
+/* Удалить tailsсвойство из myDog. Вы можете использовать либо точку, либо квадратную нотацию.
+
+Ожидание :Вы должны удалить свойство tailsиз myDog.
+Ожидание :Не следует изменять myDogустановку.
+*/
+
+/* const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails;
+
+console.log(myDog); */
