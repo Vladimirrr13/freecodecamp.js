@@ -162,7 +162,27 @@ console.log(myDog); */
 Ожидание :Вы не должны использовать операторы case, switch, илиif
 */
 
-/*  */
+/* function phoneticLookup(val) {
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+
+  var result = lookup[val];
+  return result;
+}
+
+console.log(phoneticLookup("alpha")); 
+console.log(phoneticLookup("bravo")); 
+console.log(phoneticLookup("charlie")); 
+console.log(phoneticLookup("delta")); 
+console.log(phoneticLookup("echo")); 
+console.log(phoneticLookup("foxtrot")); 
+console.log(phoneticLookup(""));
 
 /* --------------------------------- TASK 95 --------------------------------- */
 
