@@ -186,9 +186,32 @@ console.log(phoneticLookup(""));
 
 /* --------------------------------- TASK 95 --------------------------------- */
 
-/*  */
+/*  Modify the function checkObj to test if the object passed to the function parameter obj contains the specific property passed to the function parameter checkProp.
+If the property passed to checkProp is found on obj, return that property's value. If not, return Not Found.
 
-/*  */
+checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift") should return the string pony.
+Passed:checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet") should return the string kitten.
+Passed:checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house") should return the string Not Found.
+Passed:checkObj({city: "Seattle"}, "city") should return the string Seattle.
+Passed:checkObj({city: "Seattle"}, "district") should return the string Not Found.
+Passed:checkObj({pet: "kitten", bed: "sleigh"}, "gift") should return the string Not Found.
+*/
+
+/* function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+// Tests
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));     // Output: pony
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));      // Output: kitten
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));    // Output: Not Found
+console.log(checkObj({city: "Seattle"}, "city"));                                // Output: Seattle
+console.log(checkObj({city: "Seattle"}, "district"));                            // Output: Not Found
+console.log(checkObj({pet: "kitten", bed: "sleigh"}, "gift"));  */
 
 /* --------------------------------- TASK 96 --------------------------------- */
 
