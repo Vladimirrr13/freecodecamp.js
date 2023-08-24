@@ -249,9 +249,30 @@ console.log(myMusic); */
 
 /* --------------------------------- TASK 97 --------------------------------- */
 
-/*  */
+/* Получите доступ к myStorageобъекту и присвойте содержимое свойства glove boxпеременной gloveBoxContents.
+По возможности используйте точечную запись для всех свойств, в противном случае используйте запись в скобках. 
 
-/*  */
+gloveBoxContentsдолжно быть равно строке maps.
+Ожидание :Для доступа к файлам в вашем коде должны использоваться точки и скобки myStorage.
+Ожидание :gloveBoxContentsвсе равно должен быть объявлен с помощью const.
+*/
+
+/* const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside['glove box'];
+
+console.log(myStorage);
+console.log(gloveBoxContents); */
 
 /* --------------------------------- TASK 98 --------------------------------- */
 
