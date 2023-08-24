@@ -276,9 +276,28 @@ console.log(gloveBoxContents); */
 
 /* --------------------------------- TASK 98 --------------------------------- */
 
-/*  */
+/* Используя точку и скобки, задайте для переменной secondTreeвторой элемент в treesсписке от myPlantsобъекта.
 
-/*  */
+Ожидание :secondTreeдолжно быть равно строке pine.
+Ожидание :Для доступа к файлам в вашем коде должны использоваться точки и скобки myPlants.
+
+*/
+
+/* const myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"],
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"],
+  },
+];
+
+const secondTree = myPlants[1].list[1];
+
+console.log(secondTree);
+console.log(myPlants); */
 
 /* --------------------------------- TASK 99 --------------------------------- */
 
