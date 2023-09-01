@@ -301,9 +301,86 @@ console.log(myPlants); */
 
 /* --------------------------------- TASK 99 --------------------------------- */
 
-/*  */
+/* я помогает поддерживать коллекцию музыкальных альбомов. Коллекция организована как объект, содержащий несколько альбомов, которые также являются объектами. Каждый альбом представлен в коллекции с уникальным idименем свойства. Внутри каждого объекта альбома существуют различные свойства, описывающие информацию об альбоме. Не во всех альбомах есть полная информация.
 
-/*  */
+Функция updateRecordsпринимает 4 аргумента, представленных следующими параметрами функции:
+
+records- объект, содержащий несколько отдельных альбомов
+id- число, обозначающее конкретный альбом в recordsобъекте
+prop— строка, представляющая имя свойства альбома, которое необходимо обновить.
+value— строка, содержащая информацию, используемую для обновления свойства альбома.
+Завершите функцию, используя приведенные ниже правила, чтобы изменить объект, переданный в функцию.
+
+Ваша функция всегда должна возвращать весь recordsобъект.
+Если valueэто пустая строка, удалите данное propсвойство из альбома.
+Если propэто не так tracksи valueне является пустой строкой, присвойте valueэтому альбому prop.
+Если propэто tracksи valueне пустая строка, вам необходимо обновить массив альбома tracks. Во-первых, если у альбома нет tracksсвойства, присвойте ему пустой массив. Затем добавьте valueпоследний элемент в массив альбома tracks.
+Примечание.recordCollection Для тестов используется копия объекта . Не следует напрямую изменять recordCollectionобъект.
+
+Тесты
+Ожидание :После updateRecords(recordCollection, 5439, "artist", "ABBA")должна artistбыть строкаABBA
+Ожидание :После updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me"), tracksстрока должна быть Take a Chance on Meпоследним и единственным элементом.
+Ожидание :После updateRecords(recordCollection, 2548, "artist", "")не artistследует устанавливать
+Ожидание :После updateRecords(recordCollection, 1245, "tracks", "Addicted to Love"), tracksстрока должна быть Addicted to Loveпоследним элементом.
+Ожидание :После updateRecords(recordCollection, 2468, "tracks", "Free"), в качестве первого элемента tracksдолжна быть строка .1999
+Ожидание :После updateRecords(recordCollection, 2548, "tracks", "")не tracksследует устанавливать
+Ожидание :После updateRecords(recordCollection, 1245, "albumTitle", "Riptide")должна albumTitleбыть строкаRiptide
+
+*/
+
+/* // Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+function updateRecords(records, id, prop, value) {
+  if (value === "") {
+    // Если value пустая строка, удалите данное свойство prop из альбома
+    delete records[id][prop];
+  } else if (prop !== "tracks") {
+    // Если prop не "tracks" и value не пустая строка, присвойте value этому альбому prop
+    records[id][prop] = value;
+  } else {
+    // Если prop равен "tracks" и value не пустая строка
+    if (!records[id].hasOwnProperty("tracks")) {
+      // Если у альбома нет свойства "tracks", присвойте ему пустой массив
+      records[id]["tracks"] = [];
+    }
+    // Добавьте value в конец массива альбома tracks
+    records[id]["tracks"].push(value);
+  }
+
+  return records;
+}
+
+// Примеры тестов:
+
+const recordCollectionCopy = { ...recordCollection }; // Создаем копию объекта для тестов
+
+console.log(updateRecords(recordCollectionCopy, 5439, "artist", "ABBA"));
+console.log(updateRecords(recordCollectionCopy, 5439, "tracks", "Take a Chance on Me"));
+console.log(updateRecords(recordCollectionCopy, 2548, "artist", ""));
+console.log(updateRecords(recordCollectionCopy, 1245, "tracks", "Addicted to Love"));
+console.log(updateRecords(recordCollectionCopy, 2468, "tracks", "Free"));
+console.log(updateRecords(recordCollectionCopy, 2548, "tracks", ""));
+console.log(updateRecords(recordCollectionCopy, 1245, "albumTitle", "Riptide"));
+ */
 
 /* --------------------------------- TASK 100 --------------------------------- */
 
