@@ -151,3 +151,76 @@ console.log(myArray); */
 console.log(sum([1], 0)); 
 console.log(sum([2, 3, 4], 1)); 
 console.log(sum([2, 3, 4, 5], 3)); */
+
+
+/* --------------------------------- TASK 109 --------------------------------- */
+
+/* Пошук профілю
+У нас є масив об’єктів, які представляють різних людей зі списку контактів.
+
+Функція lookUpProfile, яка приймає name та властивість (prop) як аргументи, вже записана для вас.
+
+Функція повинна перевірити, чи name дійсно є ім’ям контакту (firstName) і надана властивість (prop) є властивістю цього контакту.
+
+Якщо обидва є істинними, то поверніть значення цієї власності.
+
+Якщо name не відповідає жодному контакту, поверніть рядок No such contact.
+
+Якщо prop не збігається з жодною дійсною властивістю контакту, що відповідає name, поверніть рядок No such property.
+
+Тести
+Невдало:lookUpProfile("Kristian", "lastName") має повертати рядок Vos
+Невдало:lookUpProfile("Sherlock", "likes") має повертати ["Intriguing Cases", "Violin"]
+Невдало:lookUpProfile("Harry", "likes") має повертати масив
+Невдало:lookUpProfile("Bob", "number") має повертати рядок No such contact
+Невдало:lookUpProfile("Bob", "potato") має повертати рядок No such contact
+Невдало:lookUpProfile("Akira", "address") має повертати рядок No such property */
+
+/* const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (contacts[i][prop] !== undefined) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+console.log(lookUpProfile("Kristian", "lastName"));
+console.log(lookUpProfile("Sherlock", "likes"));
+console.log(lookUpProfile("Harry", "likes")); 
+console.log(lookUpProfile("Bob", "number"));
+console.log(lookUpProfile("Bob", "potato"));
+console.log(lookUpProfile("Akira", "address")); 
+console.log(lookUpProfile("Akira", "likes")); 
+ */
