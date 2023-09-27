@@ -224,3 +224,21 @@ console.log(lookUpProfile("Bob", "potato"));
 console.log(lookUpProfile("Akira", "address")); 
 console.log(lookUpProfile("Akira", "likes")); 
  */
+
+
+
+/* --------------------------------- TASK 110 --------------------------------- */
+
+/* Змініть randomFraction, щоб поверталось випадкове число, а не 0.
+
+Тести
+В очікуванні:randomFraction має повертати випадкове число.
+В очікуванні:Число, яке повернула randomFraction, повинне бути десятковим.
+В очікуванні:Ви повинні використати Math.random, щоб згенерувати випадкове десяткове число.*/
+
+/* function randomFraction() {
+
+  return Math.random();
+}
+
+console.log(randomFraction()) */
