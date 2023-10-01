@@ -255,7 +255,25 @@ console.log(randomFraction()) */
 Пройдено:Ви повинні використати Math.floor, щоб видалити десяткову частину числа. */
 
 /* function randomWholeNum() {
-  return Math.floor(Math.random() * 10);;
+  return Math.floor(Math.random() * 10);
 }
 
 console.log(randomWholeNum()) */
+
+
+/* --------------------------------- TASK 112 --------------------------------- */
+
+/* Створіть функцію під назвою randomRange, яка приймає діапазон myMin та myMax і повертає випадкове ціле число,
+яке більше або дорівнює myMin і менше або дорівнює myMax. 
+
+Тести
+Пройдено:Найменше випадкове число, яке може згенерувати randomRange, повинне дорівнювати вашому мінімальному числу (myMin).
+Пройдено:Найбільше випадкове число, яке може згенерувати randomRange, повинне дорівнювати вашому максимальному числу (myMax).
+Пройдено:Випадкове число, згенероване за допомогою randomRange, повинне бути цілим, а не десятковим.
+Пройдено:randomRange має використовувати myMax та myMin, і повертати випадкове число у межах вашого діапазону. */
+
+/* function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+console.log(randomRange(1,111)); */
